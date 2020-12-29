@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Emmett Padway</title>
+    <link>http://emmettpadway.com/projects/</link>
+    <description>Recent content in Projects on Emmett Padway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://emmettpadway.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Adjoint and Tangent Systems for Chaotic Flows by Equation Transformation</title>
+      <link>http://emmettpadway.com/projects/chaoticadjoint/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://emmettpadway.com/projects/chaoticadjoint/</guid>
+      <description>This project is an attempt to tackle adjoint sensitivities of chaotic primal flows. The motivation is cases where the long time averaged objective function of an unsteady simulation entering limit cycle oscillation is essentially ergodic with ill-behaved sensitivity values. These problems are defined by the large scale behavior of the objective function being well behaved but with micro oscillations on the smaller scale of the design variable perturbations. This sort of behavior is shown in the figure below.</description>
+    </item>
+    
+    <item>
+      <title>Adjoint and Tangent Systems for Unconverged Flows</title>
+      <link>http://emmettpadway.com/projects/pta-devel/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://emmettpadway.com/projects/pta-devel/</guid>
+      <description>This project was on the solution of adjoint and tangent problems for design and error estimation by differentiating the primal solution process and transposing the derivatives for the adjoint formulation. This project showed the feasibility of such and approach and made certain assumptions for easier algorithmic implementation. The first paper looks at the tdevelopment of this system and focuses on cases where an explicit Runge-Kutta method fails to converge due to issues with convergence that arise from the explicit method reflecting physical unsteadiness.</description>
+    </item>
+    
+    <item>
+      <title>CST Parameterization Capabilites Implemented into NSU2D and NSU3D</title>
+      <link>http://emmettpadway.com/projects/cst_parameterization/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://emmettpadway.com/projects/cst_parameterization/</guid>
+      <description>This project was funded by Dassault and involved implementing an augmented CST parameterization capability into the NSU2D and NSU3D codes. This augmentation included in airfoil flaps, and thickness constraints implemented in the CST parameterization, enforced at the front and rear spars and the maximum thickness location. Optimization of an RAE airfoil in transonic viscous flow was successful using L-BFGS:
+  Convergence of design cycle using L-BFGS   We can see the norm of the sensitivity vector decrease by oneand a half orders of magnitude, and the objective function itself is halved.</description>
+    </item>
+    
+    <item>
+      <title>Third Order Finite Volume Hyperbolic Navier-Stokes Solver on Adaptive Space-Time Unstructured Grids</title>
+      <link>http://emmettpadway.com/projects/spacetimesolvers/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://emmettpadway.com/projects/spacetimesolvers/</guid>
+      <description>This project is on the development of a third-order hyperbolic Navier-Stokes solver on space-time unstructured grids. This project is motivated by the greater potential for scalability on unstructured meshes, and the minimization of cost for the third-order edge-based discretization. Part of this project involves research into different gradient evaluation algorithms, linear and nonlinear solvers, and algorithms on degenerate meshes.</description>
+    </item>
+    
+  </channel>
+</rss>

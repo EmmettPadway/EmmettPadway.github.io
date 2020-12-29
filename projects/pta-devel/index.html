@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Adjoint and Tangent Systems for Unconverged Flows</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: red;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="http://emmettpadway.com/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.59.0" />
+        
+
+        
+
+        
+            <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+
+        
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">Adjoint and Tangent Systems for Unconverged Flows</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/about/">About</a></li>
+                            
+                                <li><a href="/posts/">Posts</a></li>
+                            
+                                <li><a href="/projects/">Projects</a></li>
+                            
+                                <li><a href="/papers/">Papers</a></li>
+                            
+                                <li><a href="/cv/">CV</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:epadway@uwyo.edu"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/emmett-padway-62b88060/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.researchgate.net/profile/Emmett_Padway2"><i class="fa fa-researchgate"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Adjoint and Tangent Systems for Unconverged Flows</h2>
+        <h5></h5>
+        
+
+    </div>
+
+    <div align="start" class="content"><p>This project was on the solution of adjoint and tangent problems for design and
+error estimation by differentiating the primal solution process and transposing
+the derivatives for the adjoint formulation. This project showed the feasibility
+of such and approach and made certain assumptions for easier algorithmic
+implementation. The first paper looks at the tdevelopment of this system and
+focuses on cases where an explicit Runge-Kutta method fails to converge due to
+issues with convergence that arise from the explicit method reflecting physical
+unsteadiness. We showed first that we could average the objective function in
+pseudo time, and for a sufficiently long averaging window, the sensitivities
+are stable, and integrating outside of the averaging window shows minimal
+gains.</p>
+
+<table>
+  <tr>
+     <td>Final State Objective Function</td>
+     <td>250 Iteration Averaging Window</td>
+     <td>20000 Iteration Averaging Window</td>
+  </tr>
+  <tr>
+    <td><img src="/media/HiSpeed_Sens_WinFS.png"></td>
+    <td><img src="/media/HiSpeed_Sens_Win250.png"></td>
+    <td><img src="/media/HiSpeed_Sens_Win20000.png"></td>
+  </tr>
+</table>
+
+<p>The plots above show clearly that by increasing the averaging window of the
+objective function that we can get a better behaved sensitivity integration
+backwards through pseudotime, and that the window of the objective function
+significantly impacts the magnitude of the sensitivity and the direction of the
+sensitivity vector in the design space. We also showed that using certain
+assumptions on the convergence of the linear system in a newton solver that we
+could obtain reliable sensitivities and error estimates on them without
+requiring linearizing the linear solvers themselves. Without this development,
+the adjoint method for partially converged systems would have been intractable
+for more widespread and stronger solvers. The plot below shows the maximum
+error in the sensitivity calculation across as pseudo time-steps as a function
+of the linear solver tolerance of the given simulation. We can see clearly that
+it is an explicitly linear relation and the 2nd paper shows that that as the
+nonlinear problem converges, the sensitivity error decreases at the same rate
+of the primal regardless of the linear solver tolerance.</p>
+
+<figure>
+  <img src="/media/ErrConv_1stOrd.png"  />
+  <figcaption>
+      <h4>Relation between linear solver tolerance and maximum sensitivity error</h4>
+  </figcaption>
+</figure>
+
+<p>Download: <a href="/Publications/pta-devel-paper.pdf">Toward a Pseudo-Time Accurate Formulation of the Adjoint and Tangent Systems (pdf)</a></p>
+
+<p>Download: <a href="/Publications/pta-iqn-paper.pdf">Advances in the Pseudo-Time Accurate Formulation ofthe Adjoint and Tangent Systems for Sensitivity Computation and Design (pdf)</a></p>
+</div>
+
+</main>
+
+        <footer>
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a>.</p>
+        </footer>
+
+        
+
+        
+    </body>
+
+</html>
+

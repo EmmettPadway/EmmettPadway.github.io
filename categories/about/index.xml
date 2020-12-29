@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Emmett Padway</title>
+    <link>http://emmettpadway.com/categories/about/</link>
+    <description>Recent content in About on Emmett Padway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://emmettpadway.com/categories/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>http://emmettpadway.com/about/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://emmettpadway.com/about/</guid>
+      <description>About me  I am a research scholar at the National Institute of Aerospace (NIA) working with the NASA FUN3D group and developing a hyperbolic Navier-Stokes solver for adaptive space-time grids for the FUN3D code. I began my career in CFD as an undergraduate researcher for Professor Siva Nadarajah in the McGill Computational Aerodynamics Group, working on optimization and shape parameterization. I then moved to the University of Wyoming and worked on my PhD under Professor Dimitri Mavirplis.</description>
+    </item>
+    
+  </channel>
+</rss>

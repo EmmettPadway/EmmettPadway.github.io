@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Papers on Emmett Padway</title>
+    <link>http://emmettpadway.com/papers/</link>
+    <description>Recent content in Papers on Emmett Padway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://emmettpadway.com/papers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Advances in the Pseudo-Time Accurate Formulation of the Adjoint and Tangent Systems for Sensitivity Computation and Design</title>
+      <link>http://emmettpadway.com/papers/pta-iqn-paper/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://emmettpadway.com/papers/pta-iqn-paper/</guid>
+      <description>This paper presents progress in the pseudo-time accurate formulation of the adjoint and tangent systems for sensitivity computation and design to better compute sensitivities for non-converging simiulations. Previous efforts presented the formulation and verification for two explicit schemes and a quasi-Newton method. The previous quasi-newton method formulation had assumptions that limited the generality of its potential applications as it was only exact for Newton-Chord Method nonlinear solvers with fixed linear solvers.</description>
+    </item>
+    
+    <item>
+      <title>Toward a Pseudo-Time Accurate Formulation for the Tangent and Adjoint Systems</title>
+      <link>http://emmettpadway.com/papers/pta-devel-paper/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://emmettpadway.com/papers/pta-devel-paper/</guid>
+      <description>This paper presents efforts to better compute sensitivities using adjoint and tangent systems for primal problems with partial or incomplete convergence. This applies the unsteady adjoint to the steady equations to obtain a pseudo-time accurate formulation of the tangent and adjoint systems. This corresponds to differentiation of the nonlinear solver for the tangent system and transposing the differentiation for the adjoint. This paper demonstrates this approach for the forward Euler, RK5, and Newton-Chord nonlinear solvers.</description>
+    </item>
+    
+  </channel>
+</rss>
